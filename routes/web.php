@@ -23,6 +23,9 @@ Route::get('/', function () {
     return view('about');
 });
 
+Route::get('/', function () {
+    return view('review');
+});
 
 Route::get('/', function () {
     return view('home');
@@ -32,6 +35,10 @@ Auth::routes();
 
 Route::resource('post', App\Http\Controllers\PostController::class);
 Route::get('/about', [App\Http\Controllers\AboutController::class,'index'])->name('about');
+Route::get('/review', [App\Http\Controllers\ReviewController::class,'index'])->name('review');
+//Route::resource('review', App\Http\Controllers\ReviewController::class);
+//Route::post('/', [App\Http\Controllers\ReviewController::class, 'postCreate'])->name('profile.postCreate');
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');

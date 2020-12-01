@@ -27,6 +27,14 @@ integrity="sha512-TKkmXp8l3dx7NJfhDhbRnFQRS8rY4FtdH1kz/pEk6dvh8YSJ5kdOBp9KZVosTX
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/2c00d2d1dd.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -45,7 +53,8 @@ integrity="sha512-TKkmXp8l3dx7NJfhDhbRnFQRS8rY4FtdH1kz/pEk6dvh8YSJ5kdOBp9KZVosTX
     <ul>
       <li><a href="{{ url('about') }}">About</a></li>
         <li><a href="{{ route('profile') }}">{{ __('Profile') }}</a></li>
-        <li><a href="">Review</a></li>
+        
+       <!-- <li><a href="">Review</a></li>   /!-->
         <li><a href="{{ route('post.create') }}">{{ __('Create Review') }}</a></li>
         @guest
          @if (Route::has('login'))
@@ -88,7 +97,7 @@ integrity="sha512-TKkmXp8l3dx7NJfhDhbRnFQRS8rY4FtdH1kz/pEk6dvh8YSJ5kdOBp9KZVosTX
 </div>
 
 <div class="bottom">
-<li1><a href="{{ url('/') }}"> <img src= "{{ url('images/logo.png')  }}"  </a> </li>
+<a href="{{ url('/') }}"> <img src= "{{ url('images/logo.png')  }}"  </a> 
 
 </div>
 </body>
